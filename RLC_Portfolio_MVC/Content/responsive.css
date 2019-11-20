@@ -1,303 +1,106 @@
-/* lg */ 
-@media (min-width: 1200px) {
- /* Make Navigation Toggle on Desktop Hover */
-  .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeInUp 400ms;
-  }
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
-  #portfolio .row {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
 
-  
+@media only screen and (min-width: 992px) {
+	/****Ipad Landscape 1024 Container 970 ****/
+
+	.service-list{ margin-bottom:30px;}
+	.c-logo-part ul li{ margin:0 15px;}
+	.form{ margin:0 0 0 20px}
+	.main-nav{ display:block !important; }
+	/*.portfolioContainer{ width:800px; margin:0px auto !important; } */
 
 }
 
-/* md */
-@media (min-width: 992px) and (max-width: 1199px) {
-  
- /* Make Navigation Toggle on Desktop Hover */
-  .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeInUp 400ms;
-  }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/****Ipad Portrait 768 Container 750 ****/
+	body{ font-size:13px;}
+	p{ line-height:20px ;}
+	.header h1{ font-size:46px;}
+	.main-nav ul li a{ padding:14px;}
+	.small-logo{ padding:0 20px;}
+	h2{ font-size:30px}
+	h6{ font-size:16px;}
+	h3{ font-size:15px;}
+	.service-list{ margin-bottom:20px; font-size:15px;}
+	.featured-work p.padding-b{ padding-bottom:15px;}
+	.main-section{ padding:70px 0;}
+	.c-logo-part ul li{ margin:0 1%; float:left; width:18%;}
+	.c-logo-part ul li a{ display:block;}
+	.c-logo-part ul li a img{ display:block;}
+	.form{ margin:0;}
+	.contact-info-box{ margin:0 ;}
+	.social-link{ margin:0;}
 
-  .navbar-nav > li {
-    margin-left: 10px;
-  }
+	.main-nav{ display:block !important; }
+	.main-nav li a{ padding:8px 15px;}
+	/*.portfolioContainer{ width:750px; margin:0px auto !important; }
+	.Portfolio-box{ height:250px;}*/
 
-  .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .recent-work-wrap .recent-work-inner h3 a {
-    font-size: 20px;
-  }
-
-  .recent-work-wrap .overlay{
-    padding: 15px;
-  }
-
-  .services-wrap {
-    padding: 40px 10px 40px 30px;
-  }
-
-  .feature-wrap h2, 
-  .single-services h2 {
-    font-size: 18px;
-  }
-
-  .feature-wrap h3, 
-  .single-services h3{
-    font-size: 14px;
-  }
-
-  .tab-wrap .media .parrent.pull-left{
-    clear: both;
-    width: 100%;
-  }
-
-  .tab-wrap .media .parrent.media-body{
-    clear: both;
-  }
-
-  #portfolio .row {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-
-  .recent-work-wrap .overlay .preview{
-    line-height: inherit;
-  }
-
-  .team-bar .first-arrow {
-    width: 21%;
-  }
-
-  .team-bar .second-arrow {
-    width: 20%;
-  }
-
-  .team-bar .third-arrow {
-    width: 21%;
-  }
-
-  .team-bar .fourth-arrow {
-    width: 20%;
-  }
-
-  ul.social_icons li{
-    margin-right: 0;
-  }
-
-}
-
-
-/* sm */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Make Navigation Toggle on Desktop Hover */
-  .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeInUp 400ms;
-  }
-
-  .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .navbar-nav > li {
-    margin-left: 0;
-  }
-
-  #main-slider .carousel h1 {
-    font-size: 25px;
-  }
-
-  #main-slider .carousel h2 {
-    font-size: 20px;
-  }
-
-  .tab-wrap .media .parrent.pull-left, 
-  .media.accordion-inner .pull-left{
-    clear: both;
-    width: 100%;
-  }
-
-  .tab-wrap .media .parrent.media-body, 
-  .media.accordion-inner .media-body{
-    clear: both;
-  }
-
-  .services-wrap {
-    padding: 40px 0 40px 30px;
-  }
-
-  .recent-work-wrap .overlay{
-   padding: 15px;
-  }
-
-  .recent-work-wrap .recent-work-inner h3 a {
-    font-size: 20px;
-  }
-
-  .sinlge-skill{
-    width: 150px;
-    height: 150px;
-  } 
-
-  .sinlge-skill p em {
-    font-size: 25px;
-  }
-
-  .sinlge-skill p {
-    font-size: 16px;
-  }
-
-  .team-bar .first-one-arrow {
-    width: 2%;
-  }
-
-  .team-bar .first-arrow {
-    width: 18%;
-  }
-
-  .team-bar .second-arrow {
-    width: 24%;
-  }
-
-  .team-bar .third-arrow {
-    width: 15%;
-  }
-
-  .team-bar .fourth-arrow {
-    width: 20%;
-  }
-
-  .blog .blog-item .entry-meta > span a{
-    font-size: 10px;
-  }
-}
-
-/* xs */
-@media (max-width: 767px) {
-  .container > .navbar-header, .container > .navbar-collapse{
-    margin-left: 0;
-  }
-
-  .top-number{
-    font-size: 14px;
-  }
-
-  input.search-form:hover {
-    width: 120px;
-  }
-
-  .navbar-nav > li {
-    padding-bottom: 0;
-  }
-
-  #main-slider .carousel h1 {
-    font-size: 25px;
-  }
-
-  #main-slider .carousel h2 {
-    font-size: 16px;
-  }
-
-  .feature-wrap h2, 
-  .single-services h2 {
-    font-size: 18px;
-  }
-
-  .feature-wrap h3, 
-  .single-services h3{
-    font-size: 14px;
-  }
-
-
-  .media.accordion-inner .pull-left, 
-  .media.accordion-inner .media-body{
-    clear: both;
-  }
-
-  .accordion-inner h4 {
-    margin-top: 10px;
-  }
-
-  .tab-wrap .media .pull-left{
-    clear: both;
-    width: 100%;
-  }
-
-  .tab-wrap .media .media-body{
-    clear: both;
-  }
-
-  .nav-tabs > li.active > a:after{
-    display: none;
-  }
-
-  #footer .col-sm-6{
-      text-align:center;
-  }
-  
-   #footer .pull-right{
-      float: none !important;
-  }
-
-  .sinlge-skill {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .team .single-profile-top, 
-  .team .single-profile-bottom {
-    margin-bottom: 30px;
-  }
-
-  .clients-area {
-    padding: 60px 0;
-  }
-
-  .clients-area h1 {
-    font-size: 25px;
-  }
-
-  .portfolio-item, 
-  #recent-works .col-xs-12.col-sm-4.col-md-3{
-    padding:0 15px;
-  }
-
-  ul.social_icons li{
-    margin-right: 0;
-  }
-
-  .blog .blog-item .entry-meta{
-    margin-bottom: 20px;
-  }
-
-  .blog .blog-item .blog-content h3 {
-    margin-bottom: 20px;
-  }
-
-  .post_reply_comments {
-    padding-left: 20px;
-  }
-    
-
-}
-
-/* XS Portrait */
-@media (max-width: 480px) {
 
 
 }
 
+@media only screen and (max-width: 767px) {
+	/****Mobile Landscape 480 Container 100% ****/
+	body{ font-size:12px;}
+	h2{ font-size:26px;}
+	h3{ font-size:14px;}
+	h6{ font-size:16px; margin-bottom:40px;}
+	p{ line-height:18px;}
+	.service-list{ font-size:12px; margin-bottom:20px;}
+	.we-create li{ font-size:13px; padding:0 0 0 8px}
+	.header h1{ font-size:28px;}
+	.header{ padding:60px 0;}
+	.main-section{ padding:60px 0 70px;}
+	.main-nav{ display:none; position:absolute; left:0; width:100%; top:68px; margin:0 auto; float: none; background:#fff; z-index: 99; border-top: 1px solid #eee;}
+	.main-nav li{ display:block;}
+	.main-nav li.small-logo{ display:none;}
+	.main-nav li a{ display:block; padding:12px 32px; margin: 4px 0; border-bottom: 1px solid #f3f3f3;;}
+	.main-nav li a:hover{color:#7cc576}
+	.team-leader-box{ max-width:307px; width:auto; float:none; margin:0 auto;	}
+	.team-leader-box:nth-of-type(3n){ margin:0 auto}
+	.res-nav_click{ display:block;}
+	.featured-work{ font-size:12px; margin-top:30px;}
+	.featured-box{ font-size:12px;}
+	.featured-box p{ line-height:18px; }
+	.c-logo-part ul a{ margin-bottom:5px;}
+	.main-section.team{ padding:60px 0 50px;}
+	.business-talking h2{ font-size:36px;}
+	.contact-info-box{ margin:0 0 12px 30px; font-size:12px;}
+	.contact-info-box span{ line-height:18px;}
+	.contact-info-box.phone span, .contact-info-box.email span { padding-top: 6px;}
+	.social-link{ margin-left:30px;}
+	.form{ margin:0 30px;}
+	.copyright{ font-size:12px;}
+	.business-talking a{ padding:10px 25px; font-size:14px;}
+	.main-section.contact{ padding:60px 0 70px}
+	.client-part-haead{ font-size:20px; line-height:30px;}
+	.link{ font-size:14px; padding:10px 25px;}
+	.logo{ width:100px;}
+	.main-section.contact{ background-size:contain;}
+	.Portfolio-nav li a{ padding:5px 16px;}
+	.Portfolio-nav li{ display:block;}
+	/*.isotope-item img{ width:300px; left:50%; margin-left:-100px;}
+	.isotope-item{ width:300px; margin:0px auto;}
+	.isotope{ width:400px; margin:0px auto;}
+	.Portfolio-box{}
+	.portfolioContainer{ width:350px; margin:0px auto !important; } */
+
+
+}
+
+@media only screen and (max-width: 479px) {
+	/****Mobile Portrait 320 ****/
+	.contact-info-box{ margin-left:0px;}
+	.header{ padding:40px;}
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.c-logo-part ul li{ display:block;}
+	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box img { max-width:100%;}
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
+
+}

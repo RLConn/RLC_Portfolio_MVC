@@ -20,7 +20,7 @@ namespace RLC_Portfolio_MVC.Controllers
 
         public ActionResult GridDemo()
         {
-            ViewBag.Message = "Your grid demo page.";
+            ViewBag.Message = "Grid Demo Page";
 
             return View();
         }

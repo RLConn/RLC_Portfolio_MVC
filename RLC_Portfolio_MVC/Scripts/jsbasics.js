@@ -32,7 +32,8 @@ $(function () {
     });
 
     $('#Clrbtn').click(function () {
-        document.getElementById("myForm").reset();  
+        document.getElementById("myForm").reset();
+        $("#Calcbtn").click();
     });
 
     $("#MathbtnShow").click(function () {
@@ -126,6 +127,12 @@ $(function () {
 
     $("#btnPalinD").click(function () {
         //Step 1: Get the data
+        if ($("#PalWord").val() == "")
+        {
+            alert("Field cannot be empty");
+            $("PalWord").focus();
+        }
+        else
         var word = $("#PalWord").val().toLowerCase();
         var word = word.split(' ').join('');
 

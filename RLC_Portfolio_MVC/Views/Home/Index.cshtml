@@ -1,13 +1,12 @@
-﻿
+﻿@model RLC_Portfolio_MVC.Models.EmailModel
+
 <style>
     hr {
-        border: 5px solid darkslateblue;
+        border: 2px solid darkslateblue;
         background-color: lightskyblue;
-        height: 8px;
+        height: 3px;
     }
 </style>
-
-
 
 <section class="main-section" id="service">
     <!--main-section-start-->
@@ -18,7 +17,7 @@
             <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
                 <div class="service-list">
                     <div class="service-list-col1">
-                        <i class="fa fa-paw"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <div class="service-list-col2">
                         <h3>branding &amp; identity</h3>
@@ -37,6 +36,7 @@
                 <div class="service-list">
                     <div class="service-list-col1">
                         <i class="fa fa-apple"></i>
+                        <i class="fa fa-android"></i>
                     </div>
                     <div class="service-list-col2">
                         <h3>mobile design</h3>
@@ -62,82 +62,40 @@
 </section>
 <!--main-section-end-->
 
-<section class="main-section paddind" id="portfolio">
+
+
+
+<section class="main-section paddind" id="Portfolio">
     <!--main-section-start-->
     <div class="container">
         <h2>Portfolio</h2>
-        <h6>Links to my projects.</h6>
+        <h6>Links to some of my projects.</h6>
         <div class="portfolioFilter">
             <ul class="Portfolio-nav wow fadeIn delay-02s">
+                <li><a href="#" data-filter="*" class="current">All</a></li>
                 <li><a href="#" data-filter=".blog">Blog</a></li>
                 <li><a href="#" data-filter=".bugtracker">Bug Tracker</a></li>
                 <li><a href="#" data-filter=".financial">Financial Portal</a></li>
-<<<<<<< HEAD
                 <li><a href="#" data-filter=".webapi">Web API</a></li>
-=======
-                <li><a href="#" data-filter="*" class="current">All Links</a></li>
->>>>>>> parent of 148a143... Overhaul update
             </ul>
         </div>
-
     </div>
     <div class="portfolioContainer wow fadeInUp delay-04s">
         <div class=" Portfolio-box blog">
-            <button class="btn" data-toggle="modal" data-target="#Blog"><img src="~/img/blog.jpg" alt="modal"></button>
+            <button class="btn" data-toggle="modal" data-target="#Blog"><img src="~/img/blog.jpg"></button>
             <h3>Blog</h3>
         </div>
         <div class="Portfolio-box bugtracker">
-            <button class="btn" data-toggle="modal" data-target="#Bugtracker"><img src="~/img/bugtracker.jpg" alt="modal"></button>
+            <button class="btn" data-toggle="modal" data-target="#Bugtracker"><img src="~/img/bugtracker.jpg"></button>
             <h3>Bug Tracker</h3>
         </div>
         <div class=" Portfolio-box financial">
-            <button class="btn" data-toggle="modal" data-target="#Financial"><img src="~/img/vault door.jpg" alt="modal"></button>
+            <button class="btn" data-toggle="modal" data-target="#Financial"><img src="~/img/vault door.jpg"></button>
             <h3>Financial Portal</h3>
         </div>
         <div class=" Portfolio-box webapi">
             <button class="btn" data-toggle="modal" data-target="#Webapi"><img src="~/img/api_port.jpg"></button>
-            <h3>Web API</h3>
-        </div>
-    </div>
-</section>
-
-
-<section class="main-section paddind" id="challenges">
-    <!--main-section-start-->
-    <div class="container">
-        <h2>Coding Challenges</h2>
-        <h6>Some basic JavaScript exercises to get you going.</h6>
-        <div class="portfolioFilter">
-            <ul class="Portfolio-nav wow fadeIn delay-02s">
-                <li><a href="#" data-filter=".math">Math</a></li>
-                <li><a href="#" data-filter=".factorial">Factorial</a></li>
-                <li><a href="#" data-filter=".palindrome">Palindrome</a></li>
-                <li><a href="#" data-filter=".fizzbuzz">FizzBuzz</a></li>
-                <li><a href="#" data-filter="*" class="current">All JS Exercises</a></li>
-            </ul>
-        </div>
-
-    </div>
-    <div class="portfolioContainer wow fadeInUp delay-04s">
-        <div class=" Portfolio-box math">
-            <button class="btn" data-toggle="modal" data-target="#Math"><img src="~/img/Math_port.jpg" alt="modal"></button>
-            <h3>Min/Max/Mean/Sum/Product</h3>
-            <p>Math</p>
-        </div>
-        <div class="Portfolio-box factorial">
-            <button class="btn" data-toggle="modal" data-target="#Factorial"><img src="~/img/factorial_port.jpg" alt="modal"></button>
-            <h3>WHAT'S THE RESULT?</h3>
-            <p>Factorials</p>
-        </div>
-        <div class=" Portfolio-box palindrome">
-            <button class="btn" data-toggle="modal" data-target="#Palindrome"><img src="~/img/palindrome_port.png" alt="modal"></button>
-            <h3>IS IT THE SAME COMING AND GOING?</h3>
-            <p>Palindrome</p>
-        </div>
-        <div class=" Portfolio-box fizzbuzz">
-            <button class="btn" data-toggle="modal" data-target="#Fizz-Buzz"><img src="~/img/fizzbuzz_port.png" alt="modal"></button>
-            <h3>FIND YOUR FIZZ, AND BUZZ</h3>
-            <p>Fizz Buzz</p>
+            <h3>Web API Portal</h3>
         </div>
     </div>
 </section>
@@ -145,35 +103,83 @@
 
 
 
-<section class="main-section client-part" id="client">
+
+<section class="main-section client-part">
     <!--main-section client-part-start-->
     <div class="container">
-        <b class="quote-right wow fadeInDown delay-03"><i class="fa fa-quote-right"></i></b>
         <div class="row">
             <div class="col-lg-12">
-                <p class="client-part-haead wow fadeInDown delay-05">It was a pleasure to work with Lee. He worked tirelessly to make sure all of our needs were met!</p>
             </div>
         </div>
         <ul class="client wow fadeIn delay-05s">
             <li>
-                <a href="#">
-                    <img src="~/img/client-pic2.jpg" alt="">
-                    <h3>Julie Michelle</h3>
-                    <span>Ash Enterprises</span>
-                </a>
+
             </li>
         </ul>
     </div>
 </section>
 <!--main-section client-part-end-->
-<div class="c-logo-part">
-    <!--c-logo-part-start-->
+
+<section class="main-section alabaster" id="client">
+    <!--main-section alabaster-start-->
     <div class="container">
-        <ul>
+        <div class="row">
+            <div class="container">
+                <h2>Coding Challenges</h2>
+                <h6>Some basic JavaScript exercises to get you going.</h6>
+                <div class="portfolioFilter">
+                    <ul class="Portfolio-nav wow fadeIn delay-02s">
+                        <li><a href="#" data-filter="*" class="current">All</a></li>
+                        <li><a href="#" data-filter=".math">Math</a></li>
+                        <li><a href="#" data-filter=".factorial">Factorial</a></li>
+                        <li><a href="#" data-filter=".palindrome">Palindrome</a></li>
+                        <li><a href="#" data-filter=".fizzbuzz">FizzBuzz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="portfolioContainer wow fadeInUp delay-04s">
+                <div class=" Portfolio-box math">
+                    <button class="btn" data-toggle="modal" data-target="#Math"><img src="~/img/Math_port.jpg"></button>
+                    <h3>Min/Max/Mean/Sum/Product</h3>
+                    <p>Math</p>
+                </div>
+                <div class="Portfolio-box factorial">
+                    <button class="btn" data-toggle="modal" data-target="#Factorial"><img src="~/img/factorial_port.jpg"></button>
+                    <h3>What's the result?</h3>
+                    <p>Factorials</p>
+                </div>
+                <div class=" Portfolio-box palindrome">
+                    <button class="btn" data-toggle="modal" data-target="#Palindrome"><img src="~/img/palindrome_port.png"></button>
+                    <h3>Is it the same coming and going?</h3>
+                    <p>Palindrome</p>
+                </div>
+                <div class=" Portfolio-box fizzbuzz">
+                    <button class="btn" data-toggle="modal" data-target="#Fizz-Buzz"><img src="~/img/fizzbuzz_port.png"></button>
+                    <h3>Find your Fizz, and Buzz</h3>
+                    <p>Fizz Buzz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--main-section alabaster-end-->
+
+<section class="main-section client-part">
+    <!--main-section client-part-start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+        <ul class="client wow fadeIn delay-05s">
+            <li>
+
+            </li>
         </ul>
     </div>
-</div>
-<!--c-logo-part-end-->
+</section>
+<!--main-section client-part-end-->
+
 <section class="main-section team" id="team">
     <!--main-section team-start-->
     <div class="container">
@@ -186,11 +192,31 @@
                     <img src="~/img/lee2.jpg" alt="">
                     <ul>
                         <li><a href="https://www.linkedin.com/in/lee-connelly-31b73a18b/" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://twitter.com/sharkzilla" class="fa fa-twitter"></a></li>
                         <li><a href="https://www.coderfoundry.com" class="fa fa-bookmark"></a></li>
                         <li><a href="https://www.motionindustries.com" class="fa fa-bookmark-o"></a></li>
                     </ul>
                 </div>
                 <h3 class="wow fadeInDown delay-03s">Roland Lee Connelly Jr.</h3>
+            </div>
+            <div class="team-leader-block">
+                Operations professional with more than 20 years of experience in Industrial distribution and repair. Solutions-oriented problem solver possessing effective communication skills, management and process design experience. To this I have added the skills of a Web Software Engineer and am building an ever increasing working knowledge and level of experience in this field.
+            </div>
+            <br />
+            <div class="team-leader-block">
+                Operations Manager - Motion Industries, Kernersville, NC
+            </div>
+            <br />
+            <div class="team team-leader-block">
+                Web Software Engineer - Coder Foundry, Kernersville, NC
+            </div>
+            <br />
+            <div class="team-leader-block">
+                Frameworks & Programming Languages:
+            </div>
+            <div class="team-leader-block">
+                HTML5, CSS3, JavaScript/ES6, JQuery, Bootstrap, .NET, C#, MVC, ASP.NET, SQL & Bash, LINQ, Xamarin, WebAPI
+
             </div>
         </div>
     </div>
@@ -225,39 +251,39 @@
                 </div>
                 <div class="contact-info-box hours clearfix">
                     <h3><i class="fa fa-clock-o"></i>Hours:</h3>
-                    <span><strong>Monday - Friday:</strong> 6pm - 11pm<br><strong>Saturday - Sunday:</strong> Leave a message and the person on call will contact you.</span>
+                    <span><strong>Monday - Friday:</strong> 6pm - 11pm<br><strong>Saturday - Sunday:</strong> Leave a message and I'll get back to you as soon as possible.</span>
                 </div>
                 <ul class="social-link">
-                    <li class="twitter"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                    <li class="facebook"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                    <li class="pinterest"><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
-                    <li class="gplus"><a href="https://accounts.google.com"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="dribbble"><a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/lee-connelly-31b73a18b/" class="fa fa-linkedin"></a></li>
+                    <li><a href="https://twitter.com/sharkzilla" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.coderfoundry.com" class="fa fa-bookmark"></a></li>
+                    <li><a href="https://www.motionindustries.com" class="fa fa-bookmark-o"></a></li>
                 </ul>
             </div>
             <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
                 <div class="form">
-
                     <div id="sendmessage">Your message has been sent. Thank you!</div>
                     <div id="errormessage"></div>
                     @using (Html.BeginForm())
                     {
                         @Html.AntiForgeryToken()
+
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
                         <div class="form-group">
                             <input type="text" name="FromName" class="form-control input-text" id="FromName" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
+                            @Html.ValidationMessageFor(m => m.FromName)
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control input-text" name="FromEmail" id="FromEmail" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
+                            @Html.ValidationMessageFor(m => m.FromEmail)
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control input-text" name="Subject" id="Subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
+                            @Html.ValidationMessageFor(m => m.Subject)
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control input-text text-area" name="Body" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
+                            <textarea class="form-control input-text text-area" name="Body" id="Body" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            @Html.ValidationMessageFor(m => m.Body)
                         </div>
 
                         <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
@@ -268,7 +294,7 @@
     </section>
 </div>
 
-<!--MODALS-->
+
 <!--Portfolio Modals-->
 <!--Blog Modal-->
 <div id="Blog" class="modal fade" role="dialog">
@@ -284,7 +310,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-offset-1">
-                            <a href="https://rlconnblog.azurewebsites.net/"><img src="~/img/bloglink.jpg"></a>
+                            <a href="https://rlconnblog.azurewebsites.net/"><img src="~/img/bloglink.png"></a>
                         </div>
                     </div>
                 </div>
@@ -297,6 +323,7 @@
         </div>
     </div>
 </div>
+
 <!--Bug Tracker Modal-->
 <div id="Bugtracker" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -324,6 +351,7 @@
         </div>
     </div>
 </div>
+
 <!--Financial Portal Modal-->
 <div id="Financial" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -399,7 +427,7 @@
                             <p>Find the Min (lowest), the Max (highest), the Mean (average), the Sum, and the Product of a set of 5 numbers you pick.</p>
                         </div>
                     </div>
-                    <form>
+                    <form id="myForm">
                         <div class="input-group col-xs-5">
                             <span class="input-group-addon" style="color:darkorange; font-weight: bold; font-style: italic">Number 1</span>
                             <input id="first" type="number" class="form-control" name="first" placeholder="Enter Number">
@@ -437,25 +465,25 @@
                     <div class="col-md-12">
                         <div id="MathShow">
                             <pre class="brush: js">
-                                        $("#Calcbtn").click(function () {
-                                            var num1 = +$("#first").val();
-                                            var num2 = +$("#second").val();
-                                            var num3 = +$("#third").val();
-                                            var num4 = +$("#fourth").val();
-                                            var num5 = +$("#fifth").val();
+                                $("#Calcbtn").click(function () {
+                                    var num1 = +$("#first").val();
+                                    var num2 = +$("#second").val();
+                                    var num3 = +$("#third").val();
+                                    var num4 = +$("#fourth").val();
+                                    var num5 = +$("#fifth").val();
 
-                                            var min = Math.min(num1, num2, num2, num4, num5);
-                                            $("#min").text(min);
-                                            var max = Math.max(num1, num2, num3, num4, num5);
-                                            $("#max").text(max);
-                                            var mean = (num1 + num2 + num3 + num4 + num5) / 5;
-                                            $("#mean").text(mean);
-                                            var sum = num1 + num2 + num3 + num4 + num5;
-                                            $("#sum").text(sum);
-                                            var prod = (num1 * num2 * num3 * num4 * num5);
-                                            $("#prod").text(prod);
-                                        });
-                                    </pre>
+                                    var min = Math.min(num1, num2, num2, num4, num5);
+                                    $("#min").text(min);
+                                    var max = Math.max(num1, num2, num3, num4, num5);
+                                    $("#max").text(max);
+                                    var mean = (num1 + num2 + num3 + num4 + num5) / 5;
+                                    $("#mean").text(mean);
+                                    var sum = num1 + num2 + num3 + num4 + num5;
+                                    $("#sum").text(sum);
+                                    var prod = (num1 * num2 * num3 * num4 * num5);
+                                    $("#prod").text(prod);
+                                });
+                            </pre>
                         </div>
                     </div>
                 </div>
@@ -477,6 +505,7 @@
                 </div>
                 <hr />
                 <div class="modal-footer">
+                    <button type="reset" class="btn btn-warning" id="Clrbtn">Clear</button>
                     <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -502,7 +531,7 @@
                     <form>
                         <div class="input-group col-xs-6">
                             <span class="input-group-addon" style="color:darkred; font-weight: bold; font-style: italic">Number</span>
-                            <input id="FactN" type="number" class="form-control" name="FactN" placeholder="Enter">
+                            <input id="FactN" type="number" min="1" class="form-control" name="FactN" placeholder="Enter">
                         </div>
                     </form>
                 </div>
@@ -556,9 +585,6 @@
 
 <!-- Fizz-Buzz Modal -->
 @*<button class="btn wideButton" data-toggle="modal" data-target="#Fizz-Buzz"></button>*@
-
-
-
 <div id="Fizz-Buzz" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
@@ -660,7 +686,7 @@
                     <form>
                         <div class="input-group col-xs-6">
                             <span class="input-group-addon">Your Word</span>
-                            <input id="PalWord" type="text" class="form-control" name="PalWord" placeholder="Enter">
+                            <input id="PalWord" type="text" class="form-control" name="PalWord" placeholder="Enter" re>
                         </div>
                     </form>
                 </div>
